@@ -1,0 +1,22 @@
+[project]
+name = "sisotool-gui"
+version = "0.1.0"
+description = "Interface gráfica para projetos de controladores de sistemas dinâmicos lineares"
+authors = [
+    {name = "Matheus Cascalho",email = "cascalhom@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "streamlit (>=1.41.1,<2.0.0)",
+    "control (>=0.10.1,<0.11.0)",
+    "sympy (>=1.13.3,<2.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+include = ["src/**"]
